@@ -1,6 +1,7 @@
 /* Reset styles */
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #0e1823;
   color: #1b414b;
 }
 h1,
@@ -53,4 +54,9 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.container {
+  max-width: 335px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
