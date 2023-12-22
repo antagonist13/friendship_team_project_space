@@ -6,6 +6,10 @@
   margin-right: auto;
 }
 /*-------------------------------------------------------style------------------------------------------------------- */
+.reviews-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .reviews-title {
   color: #fbfbfb;
   text-align: center;
@@ -13,12 +17,11 @@
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.02em;
-  margin-top: 40px;
   margin-bottom: 25px;
 }
 
 .reviews-subtitle {
-  width: 333px;
+  max-width: 333px;
   color: #fbfbfb;
   text-align: center;
   font-size: 12px;
@@ -38,7 +41,6 @@
   align-items: center;
   border-radius: 24px;
   background: #fbfbfb;
-  margin-bottom: 40px;
 }
 
 .reviews-author-name {
@@ -53,7 +55,7 @@
 }
 
 .reviews-author-comment {
-  width: 304px;
+  max-width: 304px;
   color: rgba(4, 3, 6, 0.4);
   text-align: center;
   font-size: 16px;
@@ -63,16 +65,22 @@
   letter-spacing: -0.02em;
 }
 
-.reviews-author-item:not(:first-child) {
-  display: none;
+/* ------------------------------------------------------style-media------------------------------------------------------ */
+@media screen and (max-width: 767px) {
+  .reviews-author-item:not(:first-child) {
+    display: none;
+  }
 }
 
-/* ------------------------------------------------------style-media------------------------------------------------------ */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  .reviews-author-item:last-child {
+    display: none;
   }
 }
 
