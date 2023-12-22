@@ -101,9 +101,15 @@
 
   .reviews-commentators-list {
     display: flex;
-    gap: 32px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .reviews-author-item {
+    width: 336px;
   }
 }
+
 /* -----------------------------------------------------desktop: з 1280px----------------------------------------------------- */
 @media screen and (min-width: 1280px) {
   .container {
