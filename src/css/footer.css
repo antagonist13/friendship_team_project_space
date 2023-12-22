@@ -1,36 +1,45 @@
-.footer {
+/* ====================================== Mobile Styles ==================================*/
+.page-footer {
   max-width: 375px;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .footer-conteiner {
-  max-width: 355px;
-  padding: 40px 10px 20px 10px;
-  background-color: #1b414b;
+  padding: 40px 30px 20px 40px;
   border-radius: 24px 24px 0px 0px;
+  background: #1b414b;
 }
-.nav-footer {
+.footer-nav {
   display: flex;
-  justify-content: space-around;
+  gap: 37px;
 }
 .footer-logo {
+  display: block;
   color: #fbfbfb;
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.03em;
-  margin-right: 47px;
 }
-.nav-footer-list {
+.footer-logo:focus {
+  outline: 0px solid transparent;
+}
+.footer-nav-list {
   display: flex;
   gap: 4px;
 }
-.nav-footer-list-item {
-  width: 66px;
-  height: 40px;
-  border-radius: 8px;
-  background: rgba(251, 251, 251, 0.3);
+.footer-nav-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 66px;
+  height: 40px; */
 }
-.nav-footer-list-link {
-  display: block;
+.footer-nav-list-link {
+  display: flex;
   color: #fbfbfb;
   text-align: center;
   font-size: 9px;
@@ -38,41 +47,148 @@
   line-height: 1.3;
   text-transform: uppercase;
   padding: 15px 12px;
+  border-radius: 8px;
+  background: rgba(251, 251, 251, 0.3);
+  outline: 0px solid transparent;
 }
-.footer-social-container {
+.footer-nav-list-link:hover,
+.footer-nav-list-link:focus {
+  background: #fbfbfb;
+  color: #1b414b;
 }
 .footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 .footer-social-list-item {
+  width: 24px;
+  height: 24px;
 }
 .footer-social-list-link {
+  display: flex;
+  fill: #fbfbfb;
+  outline: 0px solid transparent;
 }
-.footer-social-list-icon {
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  fill: #fbfbfbcc;
 }
-
 .footer-company-slogan-text {
-  max-width: 279px;
+  width: 279px;
   color: #fbfbfb;
   text-align: center;
   font-size: 18px;
+  font-style: normal;
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.02em;
   margin-bottom: 82px;
-  margin-right: 38px;
-  margin-left: 38px;
 }
-
 .footer-text-copyrite-list {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.footer-copyrite-list-text {
+.footer-copyrite-list-link {
   color: rgba(251, 251, 251, 0.4);
   text-align: center;
   font-size: 12px;
+  font-style: normal;
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
+.footer-copyrite-list-link:focus {
+  outline: 1px solid rgba(251, 251, 251, 0.4);
+}
+/* ====================================== /Mobile Styles =================================*/
+/* =======================================================================================*/
+/* ====================================== Tablet Styles ==================================*/
+@media screen and (min-width: 768px) {
+  .page-footer {
+    max-width: 768px;
+    padding-top: 75px;
+  }
+  .footer-conteiner {
+    padding-top: 50px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .foooter-help-container {
+    display: flex;
+    gap: 91px;
+  }
+  .footer-nav {
+    gap: 106px;
+  }
+  .footer-logo {
+    font-size: 20px;
+  }
+  .footer-nav-list-link {
+    padding-left: 24px;
+    padding-right: 25px;
+  }
+  .footer-social-list {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .footer-company-slogan-text {
+    width: 640px;
+    font-size: 32px;
+    margin-top: 96px;
+    margin-bottom: 99px;
+  }
+  .footer-text-copyrite-list {
+    gap: 32px;
+  }
+  .footer-copyrite-list-link {
+    font-size: 14px;
+  }
+}
+
+/* ====================================== /Tablet Styles =================================*/
+/* =======================================================================================*/
+/* ===================================== Desktop Styles 1280px ===========================*/
+@media screen and (min-width: 1280px) {
+  .page-footer {
+    max-width: 1280px;
+  }
+  .footer-conteiner {
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .foooter-help-container {
+    gap: 311px;
+  }
+  .footer-nav {
+    gap: 366px;
+  }
+  .footer-company-slogan-text {
+    width: 693px;
+  }
+  .footer-company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* ===================================== /Desktop Styles 1280px ==========================*/
+/* =======================================================================================*/
+/* ===================================== Desktop Styles 1440px ===========================*/
+@media screen and (min-width: 1440px) {
+  .page-footer {
+    max-width: 1440px;
+  }
+  .foooter-help-container {
+    gap: 388px;
+  }
+  .footer-nav {
+    gap: 409px;
+  }
+}
+/* ===================================== /Desktop Styles 1440px ==========================*/
+/* =======================================================================================*/
