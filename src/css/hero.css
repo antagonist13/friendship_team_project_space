@@ -2,15 +2,8 @@
   margin: 0 auto;
   padding-top: 198px;
   padding-bottom: 122px;
-  background-image: linear-gradient(
-      359deg,
-      rgba(17, 19, 31, 0.8) 42.62%,
-      rgba(17, 19, 31, 0.31) 84.12%,
-      rgba(17, 19, 31, 0) 99.94%
-    ),
-    url(..//img/hero/mobile-hero-background.jpg);
 }
-.container-hero {
+.container {
   padding-left: 20px;
   padding-right: 20px;
   max-width: 335px;
