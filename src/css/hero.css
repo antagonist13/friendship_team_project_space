@@ -1,18 +1,13 @@
 .hero-section {
   margin: 0 auto;
-  padding-top: 198px;
-  padding-bottom: 122px;
+  padding-top: 99px;
+  padding-bottom: 61px;
 }
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 335px;
-}
+
 .hero-title {
   max-width: 335px;
   color: #fbfbfb;
   text-align: center;
-  font-family: Inter;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -25,7 +20,6 @@
 .hero-prgph {
   color: rgba(251, 251, 251, 0.7);
   text-align: center;
-  font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -37,7 +31,6 @@
   border-radius: 15px;
   background: #1b414b;
   color: #fbfbfb;
-  font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -49,10 +42,9 @@
   border: none;
 }
 @media screen and (min-width: 768px) {
-  .container-hero {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 107.5px;
   }
   .hero-title {
     font-size: 70px;
@@ -70,23 +62,25 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .container-hero {
-    max-width: 1080px;
-    padding-left: 32px;
-    padding-right: 32px;
+  .hero-section {
+    padding-top: 77.5px;
+    padding-bottom: 90px;
   }
   .hero-title {
-    font-size: 70px;
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 704px;
+    font-size: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1001px;
+    line-height: 1; /* 100% */
+    letter-spacing: -0.02em;
   }
   .hero-prgph {
     max-width: 597px;
-    font-size: 16px;
-    line-height: 1.4; /* 22.4px */
+    line-height: 22.4px; /* 22.4px */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
   }
+}
+@media screen and (min-width: 1440px) {
 }
