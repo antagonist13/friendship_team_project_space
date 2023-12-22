@@ -6,7 +6,8 @@ padding-bottom: 40px;
 .yachts-container {
 margin-left: auto; 
 margin-right: auto;
-padding-right: 20px;  
+padding-right: 20px; 
+padding-left: 20px; 
 }
     
 .yachts-title {
@@ -16,7 +17,7 @@ font-size: 28px;
 font-weight: 500;
 line-height: 1.00; 
 letter-spacing: -0.02em;
-width: 300px; 
+max-width: 319px; 
 margin-bottom: 40px;
 margin-left: auto;
 margin-right: auto;    
@@ -151,7 +152,7 @@ padding-bottom: 75px;
 .yachts-title {
 font-size: 48px;
 letter-spacing: -0.02em; 
-width: 645px;
+max-width: 645px;
 margin-bottom: 75px;
 }
 
