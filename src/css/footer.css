@@ -4,17 +4,19 @@
   padding-top: 40px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 .footer-conteiner {
-  padding: 40px 30px 20px 40px;
+  width: 100%;
   border-radius: 24px 24px 0px 0px;
   background: #1b414b;
+  padding: 40px 30px 20px 30px;
 }
-.footer-nav {
+.foooter-links-container {
   display: flex;
-  gap: 37px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .footer-logo {
   display: block;
@@ -23,23 +25,17 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.03em;
+  align-self: flex-start;
 }
 .footer-logo:focus {
-  outline: 0px solid transparent;
+  outline: 1px solid #fbfbfb;
 }
 .footer-nav-list {
   display: flex;
   gap: 4px;
 }
-.footer-nav-list-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* width: 66px;
-  height: 40px; */
-}
 .footer-nav-list-link {
-  display: flex;
+  display: block;
   color: #fbfbfb;
   text-align: center;
   font-size: 9px;
@@ -58,8 +54,11 @@
 }
 .footer-social-list {
   display: flex;
-  justify-content: center;
   gap: 8px;
+  align-self: flex-start;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 80px;
   margin-bottom: 40px;
 }
@@ -77,31 +76,36 @@
   fill: #fbfbfbcc;
 }
 .footer-company-slogan-text {
-  width: 279px;
+  max-width: 279px;
   color: #fbfbfb;
   text-align: center;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.02em;
   margin-bottom: 82px;
 }
-.footer-text-copyrite-list {
+.footer-copyrite {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-around;
 }
-.footer-copyrite-list-link {
+.footer-copyrite-text {
   color: rgba(251, 251, 251, 0.4);
-  text-align: center;
+  /* text-align: center; */
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
-.footer-copyrite-list-link:focus {
+.footer-copyrite-privacy-link {
+  color: rgba(251, 251, 251, 0.4);
+  /* text-align: center; */
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.footer-copyrite-privacy-link:focus {
   outline: 1px solid rgba(251, 251, 251, 0.4);
 }
 /* ====================================== /Mobile Styles =================================*/
@@ -117,12 +121,9 @@
     padding-left: 48px;
     padding-right: 48px;
   }
-  .foooter-help-container {
+  .foooter-links-container {
     display: flex;
-    gap: 91px;
-  }
-  .footer-nav {
-    gap: 106px;
+    flex-wrap: nowrap;
   }
   .footer-logo {
     font-size: 20px;
@@ -132,23 +133,25 @@
     padding-right: 25px;
   }
   .footer-social-list {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
   }
   .footer-company-slogan-text {
-    width: 640px;
+    max-width: 640px;
     font-size: 32px;
     margin-top: 96px;
     margin-bottom: 99px;
   }
-  .footer-text-copyrite-list {
+  .footer-copyrite {
+    justify-content: center;
     gap: 32px;
   }
-  .footer-copyrite-list-link {
+  .footer-copyrite-text {
+    font-size: 14px;
+  }
+  .footer-copyrite-privacy-link {
     font-size: 14px;
   }
 }
-
 /* ====================================== /Tablet Styles =================================*/
 /* =======================================================================================*/
 /* ===================================== Desktop Styles 1280px ===========================*/
@@ -161,19 +164,10 @@
     padding-left: 75px;
     padding-right: 75px;
   }
-  .foooter-help-container {
-    gap: 311px;
-  }
-  .footer-nav {
-    gap: 366px;
-  }
   .footer-company-slogan-text {
-    width: 693px;
-  }
-  .footer-company-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 693px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 /* ===================================== /Desktop Styles 1280px ==========================*/
@@ -183,12 +177,9 @@
   .page-footer {
     max-width: 1440px;
   }
-  .foooter-help-container {
-    gap: 388px;
-  }
-  .footer-nav {
-    gap: 409px;
+  .footer-company-slogan-text {
+    max-width: 699px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
-/* ===================================== /Desktop Styles 1440px ==========================*/
-/* =======================================================================================*/
