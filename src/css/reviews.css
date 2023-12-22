@@ -66,12 +66,13 @@
 }
 
 /* ------------------------------------------------------style-media------------------------------------------------------ */
+/* ------------------------------------------------------phone------------------------------------------------------ */
 @media screen and (max-width: 767px) {
   .reviews-author-item:not(:first-child) {
     display: none;
   }
 }
-
+/* ------------------------------------------------------tablet------------------------------------------------------ */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -82,8 +83,28 @@
   .reviews-author-item:last-child {
     display: none;
   }
-}
 
+  .reviews-title {
+    font-size: 48px;
+    font-style: normal;
+  }
+
+  .reviews-subtitle {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.28;
+    max-width: 571px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+  }
+
+  .reviews-commentators-list {
+    display: flex;
+    gap: 32px;
+  }
+}
+/* -----------------------------------------------------desktop: з 1280px----------------------------------------------------- */
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -91,7 +112,7 @@
     padding-right: 50px;
   }
 }
-
+/*-------------------------------------------------------desktop: з 1440px------------------------------------------------------- */
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
