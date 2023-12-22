@@ -94,13 +94,13 @@
 
     .container {
         max-width: 768px;
-        padding: 75px 32px;
     }
 
     .advantages-style {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      padding: 75px 32px;
     }
   
     .advantages {
