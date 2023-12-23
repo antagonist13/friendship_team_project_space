@@ -1,5 +1,4 @@
 .hero-section {
-  margin: 0 auto;
   padding-top: 99px;
   padding-bottom: 121.5px;
 }
@@ -12,8 +11,6 @@
   line-height: 1; /* 100% */
   letter-spacing: -0.02em;
   margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .hero-prgph {
   color: rgba(251, 251, 251, 0.7);
@@ -46,8 +43,6 @@
   }
   .hero-title {
     font-size: 70px;
-    margin-left: 0;
-    margin-right: 0;
     max-width: 704px;
   }
   .hero-prgph {
@@ -57,6 +52,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
+  }
+  .hero-button {
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
 }
 @media screen and (min-width: 1280px) {
