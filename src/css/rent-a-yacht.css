@@ -1,10 +1,3 @@
-.container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .rent-section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -14,10 +7,9 @@
 /* ===========  MOBILE  ========== */
 .review-form-description {
   margin-bottom: 40px;
-  
+
   font-size: 28px;
-  
-  
+
   line-height: 1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
@@ -29,7 +21,6 @@
   align-items: flex-start;
   gap: 18px;
   width: 100%;
-  
 }
 .review-form-div {
   width: 100%;
@@ -52,7 +43,7 @@
 }
 .review-form-input:hover,
 .review-form-input:focus {
-  border: 1px solid rgba(251, 251, 251, 0.50);
+  border: 1px solid rgba(251, 251, 251, 0.5);
 }
 .review-form-comment {
   width: 100%;
@@ -70,7 +61,7 @@
 }
 .review-form-comment:hover,
 .review-form-comment:focus {
-  border: 1px solid rgba(251, 251, 251, 0.50);
+  border: 1px solid rgba(251, 251, 251, 0.5);
 }
 .button-modal {
   display: inline-flex;
@@ -94,27 +85,26 @@
 .button-modal:hover,
 .button-modal:focus {
   background: #fbfbfb;
-  color: #1B414B;
+  color: #1b414b;
 }
 
 .img {
   border-radius: 24px;
 }
 .yachts-img {
-    margin-top: 80px;
-    background-color: transparent;
-  
+  margin-top: 80px;
+  background-color: transparent;
 }
 
 /* =========TABLE======== */
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+  .rent-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
   }
-.review-form-description {
+  .review-form-description {
     font-size: 48px;
     font-style: normal;
     font-weight: 500;
@@ -126,7 +116,6 @@
     align-items: flex-start;
     gap: 18px;
     width: 100%;
-
   }
 
   .review-form-div {
@@ -145,7 +134,7 @@
 
   .review-form-input:hover,
   .review-form-input:focus {
-    border: 1px solid rgba(251, 251, 251, 0.50);
+    border: 1px solid rgba(251, 251, 251, 0.5);
   }
 
   /* .review-form-comment {
@@ -165,7 +154,7 @@
 
   .review-form-comment:hover,
   .review-form-comment:focus {
-    border: 1px solid rgba(251, 251, 251, 0.50);
+    border: 1px solid rgba(251, 251, 251, 0.5);
   }
 
   .button-modal {
@@ -190,51 +179,25 @@
   .button-modal:hover,
   .button-modal:focus {
     background: #fbfbfb;
-    color: #1B414B;
+    color: #1b414b;
   }
-
-  
 
   .yachts-img {
     flex-shrink: 0;
-    margin-top: 80px;
+    margin-top: 0;
     background-color: transparent;
   }
 }
 
-
-
 /* ===========  DESKTOP  ========== */
 
-
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  /* .review-form-description {
-    color: #FBFBFB;
-    font-family: Inter;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 48px;
-    /* 100% */
-  
-    /* .rent-a-yacht-flex-con {
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
-    } */
 }
 
 /* ===========   ========== */
-
 
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
   }
 }
-
