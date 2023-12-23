@@ -71,7 +71,7 @@
 }
 
 .advantages-list-text-design {
-  width: 238px;
+  max-width: 238px;
 }
 
 .advantages-photo-style {
@@ -125,7 +125,7 @@
   }
 
   .advantages-list-text-design {
-    width: 238px;
+    max-width: 238px;
   }
 
   .advantages-photo-style {
