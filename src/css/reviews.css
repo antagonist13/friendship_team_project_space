@@ -154,14 +154,6 @@
 
 /*-------------------------------------------------------desktop: з 1440px------------------------------------------------------- */
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-
-  .reviews-section {
-    padding-top: 75px;
-    padding-bottom: 75px;
-  }
   .reviews-commentators-list {
     display: flex;
     justify-content: center;
