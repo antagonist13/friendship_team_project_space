@@ -153,35 +153,24 @@
 
   .reviews-commentators-list {
     display: flex;
-    justify-content: space-between;
-  }
-}
-/* ssdadadad */
-
-/* .reviews-title {
-    font-size: 48px;
-    width: 854px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .reviews-subtitle {
-    line-height: 1.28;
-    max-width: 571px;
-    margin-left: 355px;
-    margin-right: 355px;
-  }
-
-  .reviews-commentators-list {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 26px;
   }
 
   .reviews-author-item {
+    width: calc((100% - 52px) / 3);
+    display: flex;
+    max-width: 376px;
     height: 282px;
     padding: 32px 28px;
-    max-width: 376px;
-  } */
+  }
+
+  .reviews-author-comment {
+    max-width: 320px;
+    height: 110px;
+  }
+}
+
 /*-------------------------------------------------------desktop: з 1440px------------------------------------------------------- */
 @media screen and (min-width: 1440px) {
   .container {
@@ -191,5 +180,23 @@
   .reviews-section {
     padding-top: 75px;
     padding-bottom: 75px;
+  }
+  .reviews-commentators-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .reviews-author-item {
+    width: calc((100% - 64px) / 3);
+    display: flex;
+    max-width: 392px;
+    height: 282px;
+    padding: 32px 36px;
+  }
+
+  .reviews-author-comment {
+    max-width: 293px;
+    height: 110px;
   }
 }
