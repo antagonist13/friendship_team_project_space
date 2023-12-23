@@ -100,7 +100,6 @@
   .review-form-div {
     width: 100%;
   }
-    
   .div-textarea {
     width: 100%;
   }
@@ -141,11 +140,12 @@
     flex-shrink: 0;
     margin-top: 0;
     background-color: transparent;
-   
+        margin-top: 80px;
   }
 }
 
-/* ===========  DESKTOP  ========== */
+
+/* ===========  DESKTOP 1280  ========== */
 
 @media screen and (min-width: 1280px) {
   .review-form {
@@ -154,32 +154,26 @@
       align-items: flex-start;
       gap: 18px;
       width: 100%;
-    }
+  }
   .rent-container {
     display: flex;
     flex-direction: row-reverse;
     gap: 50px;
-    }
-  /* .btn-m {
-    margin-bottom: 0px;
-  } */
-  .yachts-img {
-    width: 658px;
   }
+     .yachts-img {
+       margin-top: 0px;
+     } 
 }
 
-/* ===========   ========== */
+/* =========== DESKTOP 1440  ========== */
 
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
   }
-     .yachts-img {
-       width: 768px;
-     }
-         .rent-container {
-           display: flex;
-           flex-direction: row-reverse;
-           gap: 50px;
-         }
+  .rent-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
 }
