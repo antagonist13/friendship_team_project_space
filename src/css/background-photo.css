@@ -29,6 +29,7 @@
 }
 @media screen and (min-width: 768px) {
   .background-photo-container {
+    height: 962px;
     background-image: linear-gradient(
         rgba(17, 19, 31, 0.8),
         rgba(17, 19, 31, 0.31),
@@ -51,6 +52,7 @@
 }
 @media screen and (min-width: 1280px) {
   .background-photo-container {
+    height: 800px;
     background-image: linear-gradient(
         rgba(17, 19, 31, 0.8),
         rgba(17, 19, 31, 0.31),
