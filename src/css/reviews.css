@@ -147,6 +147,8 @@
     max-width: 571px;
     font-size: 14px;
     line-height: 1.3;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .reviews-commentators-list {
@@ -154,19 +156,9 @@
     justify-content: space-between;
   }
 }
-/*-------------------------------------------------------desktop: з 1440px------------------------------------------------------- */
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
+/* ssdadadad */
 
-  .reviews-section {
-    padding-top: 75px;
-    padding-bottom: 75px;
-  }
-  /* ssdadadad */
-
-  /* .reviews-title {
+/* .reviews-title {
     font-size: 48px;
     width: 854px;
     margin-left: auto;
@@ -190,4 +182,14 @@
     padding: 32px 28px;
     max-width: 376px;
   } */
+/*-------------------------------------------------------desktop: з 1440px------------------------------------------------------- */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .reviews-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
 }
