@@ -22,7 +22,6 @@ pointer-events: auto
   pointer-events: auto;
 }
 
-/*=====================*/
 .mobile-modal-container {
   display: flex;
  flex-direction: column;
@@ -36,8 +35,6 @@ pointer-events: auto
   
 }
 
-
-/*=====================*/
 .mobile-modal-header { 
 width: 335px;
 height: 42px;
@@ -95,7 +92,6 @@ font-weight: 400;
 line-height: 130%;
 text-transform: uppercase;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .mobile-menu-nav-btn:hover,
