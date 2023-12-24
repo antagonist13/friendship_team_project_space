@@ -21,7 +21,7 @@
 .mobile-modal-container {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
+  padding-top: 16px;
   padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
@@ -63,7 +63,9 @@
   padding: 0;
   line-height: 0;
 }
-
+.mobile-menu-close-btn-icon {
+  stroke: #0e1823;
+}
 .mobile-menu-nav-list {
   display: flex;
   flex-direction: column;
