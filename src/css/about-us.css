@@ -1,11 +1,13 @@
 .about-us {
   padding-bottom: 80px;
+  z-index: 2;
+  position: relative;
 }
 
 .about-us-container {
   display: flex;
   flex-direction: column;
-  border-radius: 24px;
+  border-radius: 30px;
   background-color: #fbfbfb;
 }
 
@@ -38,8 +40,8 @@
   letter-spacing: -0.02em;
   margin-bottom: 40px;
 }
-.about-us-foto {
-  border-radius: 24px;
+.about-us-photo {
+  border-radius: 28px;
   border: none;
 }
 

@@ -1,6 +1,8 @@
 .hero-section {
   padding-top: 99px;
   padding-bottom: 121.5px;
+  z-index: 2;
+  position: relative;
 }
 .hero-title {
   color: #fbfbfb;

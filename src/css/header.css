@@ -4,6 +4,8 @@ body {
 
 .header {
   padding-bottom: 99px;
+  z-index: 2;
+  position: relative;
 }
 
 .header-wrapper {
