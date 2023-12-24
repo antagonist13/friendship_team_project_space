@@ -34,12 +34,12 @@
 }
 
 .mobile-modal-header {
-  width: 335px;
+  width: 100%;
   height: 42px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 201px;
+  margin-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   flex-shrink: 0;
