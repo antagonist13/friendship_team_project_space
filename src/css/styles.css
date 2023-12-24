@@ -5,6 +5,7 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./background-photo.css');
 @import url('./header.css');
 @import url('./mobile-menu.css');
 @import url('./hero.css');
