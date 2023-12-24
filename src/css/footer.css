@@ -1,0 +1,185 @@
+/* ====================================== Mobile Styles ==================================*/
+.page-footer {
+  max-width: 375px;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-conteiner {
+  width: 100%;
+  border-radius: 24px 24px 0px 0px;
+  background: #1b414b;
+  padding: 40px 30px 20px 30px;
+}
+.foooter-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-logo {
+  display: block;
+  color: #fbfbfb;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  align-self: flex-start;
+}
+.footer-logo:focus {
+  outline: 1px solid #fbfbfb;
+}
+.footer-nav-list {
+  display: flex;
+  gap: 4px;
+}
+.footer-nav-list-link {
+  display: block;
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: uppercase;
+  padding: 15px 12px;
+  border-radius: 8px;
+  background: rgba(251, 251, 251, 0.3);
+  outline: 0px solid transparent;
+}
+.footer-nav-list-link:hover,
+.footer-nav-list-link:focus {
+  background: #fbfbfb;
+  color: #1b414b;
+}
+.footer-social-list {
+  display: flex;
+  gap: 8px;
+  align-self: flex-start;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.footer-social-list-item {
+  width: 24px;
+  height: 24px;
+}
+.footer-social-list-link {
+  display: flex;
+  fill: #fbfbfb;
+  outline: 0px solid transparent;
+}
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  fill: #fbfbfbcc;
+}
+.footer-company-slogan-text {
+  max-width: 279px;
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 82px;
+}
+.footer-copyrite {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-copyrite-text {
+  color: rgba(251, 251, 251, 0.4);
+  /* text-align: center; */
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.footer-copyrite-privacy-link {
+  color: rgba(251, 251, 251, 0.4);
+  /* text-align: center; */
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.footer-copyrite-privacy-link:focus {
+  outline: 1px solid rgba(251, 251, 251, 0.4);
+}
+/* ====================================== /Mobile Styles =================================*/
+/* =======================================================================================*/
+/* ====================================== Tablet Styles ==================================*/
+@media screen and (min-width: 768px) {
+  .page-footer {
+    max-width: 768px;
+    padding-top: 75px;
+  }
+  .footer-conteiner {
+    padding-top: 50px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .foooter-links-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .footer-logo {
+    font-size: 20px;
+  }
+  .footer-nav-list-link {
+    padding-left: 24px;
+    padding-right: 25px;
+  }
+  .footer-social-list {
+    margin: 0;
+  }
+  .footer-company-slogan-text {
+    max-width: 640px;
+    font-size: 32px;
+    margin-top: 96px;
+    margin-bottom: 99px;
+  }
+  .footer-copyrite {
+    justify-content: center;
+    gap: 32px;
+  }
+  .footer-copyrite-text {
+    font-size: 14px;
+  }
+  .footer-copyrite-privacy-link {
+    font-size: 14px;
+  }
+}
+/* ====================================== /Tablet Styles =================================*/
+/* =======================================================================================*/
+/* ===================================== Desktop Styles 1280px ===========================*/
+@media screen and (min-width: 1280px) {
+  .page-footer {
+    max-width: 1280px;
+  }
+  .footer-conteiner {
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .footer-company-slogan-text {
+    max-width: 693px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/* ===================================== /Desktop Styles 1280px ==========================*/
+/* =======================================================================================*/
+/* ===================================== Desktop Styles 1440px ===========================*/
+@media screen and (min-width: 1440px) {
+  .page-footer {
+    max-width: 1440px;
+  }
+  .footer-company-slogan-text {
+    max-width: 699px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
