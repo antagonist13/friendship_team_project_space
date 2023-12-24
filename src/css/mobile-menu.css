@@ -1,4 +1,29 @@
-.mobile-modal {
+.mobile-menu-wrapper {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999999;
+      width: 100%;
+      height: 100%;
+      background-color: #0E1823;
+
+      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: auto
+     }
+    
+      .mobile-menu-wrapper.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+
+
+      .mobile-modal-container {
   display: flex;
   flex-direction: column;
  padding-top: 10px;
@@ -8,8 +33,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 375px;
- 
-background-color: #0E1823;
+  
 }
 
 
@@ -31,7 +55,7 @@ border: 1px solid #FBFBFB;
 background: #FBFBFB;
 }
 
-.mobile-logo {
+.mobile-modai-logo {
   margin-left: 20px;
   color: #1B414B;
   font-family: Inter;
@@ -51,7 +75,6 @@ margin-right: 20px;
 }
 
 .mobile-menu-nav {
-  margin-bottom: 361px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,8 +105,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: #1B414B; 
 }
 
+
+
+
+
   .mobile-menu-social-list-icon {
     fill: #FBFBFB;
+    
     
   }
 
@@ -92,7 +120,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: avto;
+   
   }
 
  
