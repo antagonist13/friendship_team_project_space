@@ -1,5 +1,6 @@
 .about-us {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
+  padding-top: 121.5px;
   z-index: 2;
   position: relative;
 }
@@ -46,6 +47,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about-us {
+    padding-top: 107.5px;
+    padding-bottom: 75px;
+  }
   .about-us-title {
     font-size: 48px;
     line-height: 1;
@@ -71,7 +76,8 @@
 
 @media screen and (min-width: 1280px) {
   .about-us {
-    padding-bottom: 150px;
+    padding-top: 90px;
+    padding-bottom: 75px;
   }
   .about-us-section {
     display: flex;
