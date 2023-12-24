@@ -25,6 +25,7 @@
 }
 .hero-button {
   display: block;
+  width: 141px;
   border-radius: 15px;
   background: #1b414b;
   color: #fbfbfb;
@@ -56,6 +57,7 @@
     margin-bottom: 48px;
   }
   .hero-button {
+    width: 179px;
     padding: 16px 40px;
     font-size: 18px;
     font-weight: 500;
