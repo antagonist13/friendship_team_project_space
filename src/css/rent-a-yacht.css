@@ -6,6 +6,7 @@
 .review-form-description {
   margin-bottom: 40px;
   font-size: 28px;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
@@ -22,6 +23,7 @@
 }
 .div-textarea {
   width: 100%;
+  height: 108px;
 }
 .review-form-input {
   width: 100%;
@@ -29,7 +31,7 @@
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 12px;
   background-color: transparent;
-  padding-left: 20px;
+  padding-left: 18px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: 0px solid transparent;
@@ -53,26 +55,22 @@
   color: #fbfbfb;
   cursor: pointer;
   resize: none;
+  outline: 0px solid transparent;
 }
 .review-form-comment:hover,
 .review-form-comment:focus {
   border: 1px solid rgba(251, 251, 251, 0.5);
 }
 .button-modal {
-  display: inline-flex;
+  display: block;
   padding: 14px 44px;
   margin-top: 40px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   border-radius: 15px;
   background: #1b414b;
-  font-family: Inter;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 18px;
-  letter-spacing: -0.28px;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
   border: none;
   color: #fbfbfb;
 }
@@ -92,85 +90,82 @@
 /* =========TABLE======== */
 
 @media screen and (min-width: 768px) {
+  .rent-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .review-form {
+    max-width: 472px;
+  }
+  .rent-inside-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 472px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .review-form-description {
     font-size: 48px;
-    font-style: normal;
-    font-weight: 500;
-  }
-  .review-form-div {
-    width: 100%;
+    margin-bottom: 50px;
+    max-width: 381px;
   }
   .div-textarea {
     width: 100%;
   }
-  .review-form-input:hover,
-  .review-form-input:focus {
-    border: 1px solid rgba(251, 251, 251, 0.5);
+  .review-form-input {
+    height: 54px;
+    padding: 18px 18px;
   }
-  .review-form-comment:hover,
-  .review-form-comment:focus {
-    border: 1px solid rgba(251, 251, 251, 0.5);
+
+  .review-form-comment {
+    padding: 18px 18px;
+    height: 116px;
   }
   .button-modal {
-    display: inline-flex;
     padding: 18px 75px;
-    margin-top: 40px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    margin-top: 50px;
     border-radius: 15px;
     background: #1b414b;
-    font-family: Inter;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: -0.28px;
-    border: none;
-    color: #fbfbfb;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    max-width: 194px;
+    height: 56px;
   }
-  .button-modal:hover,
-  .button-modal:focus {
-    background: #fbfbfb;
-    color: #1b414b;
-  }
-  
 
   .yachts-img {
-    flex-shrink: 0;
-    margin-top: 0;
-    background-color: transparent;
-        margin-top: 80px;
+    margin-top: 100px;
   }
 }
-
 
 /* ===========  DESKTOP 1280  ========== */
 
 @media screen and (min-width: 1280px) {
   .review-form {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 18px;
-      width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    width: 100%;
+  }
+  .rent-inside-container {
+    width: 472px;
+    margin: 0;
   }
   .rent-container {
     display: flex;
     flex-direction: row-reverse;
     gap: 50px;
   }
-     .yachts-img {
-       margin-top: 0px;
-     } 
+  .yachts-img {
+    margin-top: 0px;
+  }
 }
 
 /* =========== DESKTOP 1440  ========== */
 
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
   .rent-container {
     display: flex;
     flex-direction: row-reverse;
