@@ -38,7 +38,7 @@ body {
   display: none;
 }
 
-.header-burger-btn {
+button {
   line-height: 0;
   display: flex;
   justify-content: center;
@@ -55,9 +55,16 @@ body {
 /* Animation */
 .btn-slice {
 
-  letter-spacing: 0.10rem;
-  font-weight: 200;
+  background: rgba(27, 65, 75, 0.50);
+
+  color: #FBFBFB;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  position: relative;
+
   -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+
   -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
   -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
   transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
@@ -67,11 +74,10 @@ body {
   -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);
   transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
 }
-
 .btn-slice .top  {
   position: relative;
   height: 6px;
-  overflow: visible;
+  overflow: hidden;
   top: 0;
   -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
 
@@ -94,7 +100,7 @@ body {
 
   position: relative;
   height: 6px;
-  overflow: visible;
+  overflow: hidden;
   bottom: 0;
   -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
 
@@ -140,6 +146,7 @@ body {
   transition-delay:0.35s;
 }
 .btn-slice:hover, .btn-slice:focus, .btn-slice:active {
+  margin-left: 10px;
   background: #1B414B;
 }
 .btn-slice:before{
@@ -228,7 +235,7 @@ body {
     fill: #1b414b;
   }
 
-  .header-burger-btn {
+  button {
     display: none;
   }
 }
@@ -237,7 +244,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .header {
-    padding-bottom: 77.5px;
+    padding-bottom: 78px;
   }
 
   .header-container {
