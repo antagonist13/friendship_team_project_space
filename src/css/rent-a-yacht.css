@@ -74,8 +74,7 @@
   border: none;
   color: #fbfbfb;
 }
-.button-modal:hover,
-.button-modal:focus {
+.button-modal:active {
   background: #fbfbfb;
   color: #1b414b;
 }
@@ -87,7 +86,7 @@
   background-color: transparent;
 }
 
-/* =========TABLE======== */
+/* =========TABLET======== */
 
 @media screen and (min-width: 768px) {
   .rent-section {
@@ -160,6 +159,11 @@
   }
   .yachts-img {
     margin-top: 0px;
+  }
+  .button-modal:hover,
+  .button-modal:focus {
+    background: #fbfbfb;
+    color: #1b414b;
   }
 }
 
