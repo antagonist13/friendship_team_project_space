@@ -29,7 +29,7 @@
   margin-right: auto;
   width: 375px;
 }
-
+.mobile-modal-header {
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
@@ -95,13 +95,13 @@
   fill: #fbfbfb;
 }
 
-  .mobile-menu-social-list-link {
-    display: block;
-  }
+.mobile-menu-social-list-link {
+  display: block;
+}
 
-  .mobile-menu-social-list {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+.mobile-menu-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
   margin-top: auto;
 }
