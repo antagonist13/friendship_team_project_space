@@ -136,8 +136,7 @@
   margin-right: auto;
 }
 
-.yachts-link:hover,
-.yachts-link:focus {
+.yachts-link:active {
   background-color: #fbfbfb;
   color: #1b414b;
 }
@@ -279,6 +278,11 @@
 
   .yachts-list-box {
     max-width: 313px;
+  }
+  .yachts-link:hover,
+  .yachts-link:focus {
+    background-color: #fbfbfb;
+    color: #1b414b;
   }
 }
 
