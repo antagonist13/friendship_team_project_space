@@ -1,119 +1,70 @@
-/* ====================================== Mobile Styles ==================================*/
-.page-footer {
-  max-width: 375px;
-  padding-top: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
+body {
+  padding-top: 20px;
 }
-.footer-conteiner {
-  width: 100%;
-  border-radius: 24px 24px 0px 0px;
-  background: #1b414b;
-  padding: 40px 30px 20px 30px;
+
+.header {
+  padding-bottom: 99px;
+  z-index: 2;
+  position: relative;
 }
-.foooter-links-container {
+
+.header-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  border-radius: 8px;
+  border: 1px solid #fbfbfb;
+  background-color: #fbfbfb;
+  padding: 7px 20px;
+  align-items: center;
   justify-content: space-between;
 }
-.footer-logo {
-  display: block;
-  color: #fbfbfb;
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  color: #1b414b;
   font-size: 14px;
+  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.03em;
-  align-self: flex-start;
 }
-.footer-logo:focus {
-  outline: 1px solid #fbfbfb;
+.header-nav-list {
+  display: none;
 }
-.footer-nav-list {
+
+.header-social-list {
+  display: none;
+}
+
+button {
+  line-height: 0;
   display: flex;
-  gap: 4px;
-}
-.footer-nav-list-link {
-  display: block;
-  color: #fbfbfb;
-  text-align: center;
-  font-size: 9px;
-  font-weight: 400;
-  line-height: 1.3;
-  text-transform: uppercase;
-  padding: 15px 12px;
-  border-radius: 8px;
-  background: rgba(251, 251, 251, 0.3);
-  outline: 0px solid transparent;
-}
-.footer-nav-list-link:hover,
-.footer-nav-list-link:focus {
-  background: #fbfbfb;
-  color: #1b414b;
-}
-.footer-social-list {
-  display: flex;
-  gap: 8px;
-  align-self: flex-start;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: transparent;
 }
-.footer-social-list-item {
-  width: 24px;
-  height: 24px;
+
+.header-icon-burger {
+  stroke: #1b414b;
 }
-.footer-social-list-link {
-  display: flex;
-  fill: #fbfbfb;
-  outline: 0px solid transparent;
-}
-.footer-social-list-link:hover,
-.footer-social-list-link:focus {
-  fill: #fbfbfbcc;
-}
-.footer-company-slogan-text {
-  max-width: 279px;
-  color: #fbfbfb;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  margin-bottom: 82px;
-}
-.footer-copyrite {
-  display: flex;
-  justify-content: space-around;
-}
-.footer-copyrite-text {
-  color: rgba(251, 251, 251, 0.4);
-  /* text-align: center; */
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-}
-.footer-copyrite-privacy-link {
-  color: rgba(251, 251, 251, 0.4);
-  /* text-align: center; */
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-}
-.footer-copyrite-privacy-link:focus {
-  outline: 1px solid rgba(251, 251, 251, 0.4);
-}
+
 /* Animation */
 .btn-slice {
 
-  letter-spacing: 0.10rem;
-  font-weight: 200;
+  background: rgba(27, 65, 75, 0.50);
+
+  color: #FBFBFB;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  position: relative;
+
   -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+
   -moz-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
   -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225);
   transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
@@ -123,11 +74,10 @@
   -o-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225);
   transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
 }
-
 .btn-slice .top  {
   position: relative;
   height: 6px;
-  overflow: visible;
+  overflow: hidden;
   top: 0;
   -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
 
@@ -150,7 +100,7 @@
 
   position: relative;
   height: 6px;
-  overflow: visible;
+  overflow: hidden;
   bottom: 0;
   -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
 
@@ -195,12 +145,15 @@
   -o-transition-delay:0.35s;
   transition-delay:0.35s;
 }
-
+.btn-slice:hover, .btn-slice:focus, .btn-slice:active {
+  margin-left: 10px;
+  background: #1B414B;
+}
 .btn-slice:before{
   content: '';
   /**height: 1px;**/
   width: 60px;
-
+  background-color: #0E1823;
   position: absolute;
   margin-top: 6px;
   right: 10px;
@@ -222,78 +175,120 @@
   width: 80%;
   visibility: visible;
 }
-/* ====================================== /Mobile Styles =================================*/
-/* =======================================================================================*/
-/* ====================================== Tablet Styles ==================================*/
+
+/* ---------------Tablet----------------- */
+
 @media screen and (min-width: 768px) {
-  .page-footer {
-    max-width: 768px;
-    padding-top: 75px;
+  body {
+    padding-top: 32px;
   }
-  .footer-conteiner {
-    padding-top: 50px;
-    padding-left: 48px;
-    padding-right: 48px;
+
+  .header {
+    padding-bottom: 100px;
   }
-  .foooter-links-container {
+
+  .header-wrapper {
+    padding: 4px 30px;
+  }
+
+  .header-nav {
     display: flex;
-    flex-wrap: nowrap;
+    align-items: center;
   }
-  .footer-logo {
+  .header-logo {
     font-size: 20px;
+    margin-right: 109px;
   }
-  .footer-nav-list-link {
-    padding-left: 24px;
-    padding-right: 25px;
+
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
   }
-  .footer-social-list {
-    margin: 0;
+  .header-nav-list-item {
+    min-width: 91px;
   }
-  .footer-company-slogan-text {
-    max-width: 640px;
-    font-size: 32px;
-    margin-top: 96px;
-    margin-bottom: 99px;
+
+  .header-nav-list-link {
+    display: block;
+    text-align: center;
+    color: #fbfbfb;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    background-color: rgba(27, 65, 75, 0.5);
   }
-  .footer-copyrite {
-    justify-content: center;
-    gap: 32px;
+  .header-social-list {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
   }
-  .footer-copyrite-text {
-    font-size: 14px;
+
+  .header-social-list-link {
+    display: block;
+    line-height: 0;
+    fill: #1b414b;
   }
-  .footer-copyrite-privacy-link {
-    font-size: 14px;
+
+  button {
+    display: none;
   }
 }
-/* ====================================== /Tablet Styles =================================*/
-/* =======================================================================================*/
-/* ===================================== Desktop Styles 1280px ===========================*/
+
+/* ---------------DeskTop 1280px----------------- */
+
 @media screen and (min-width: 1280px) {
-  .page-footer {
-    max-width: 1280px;
+  .header {
+    padding-bottom: 78px;
   }
-  .footer-conteiner {
-    padding-top: 50px;
-    padding-left: 75px;
-    padding-right: 75px;
+
+  .header-container {
+    padding-left: 100px;
+    padding-right: 100px;
   }
-  .footer-company-slogan-text {
-    max-width: 693px;
-    margin-right: auto;
-    margin-left: auto;
+
+  .header-wrapper {
+    padding: 4px 30px;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    width: 651px;
+    justify-content: space-between;
+  }
+  .header-logo {
+    margin-right: 0;
+  }
+
+  .header-nav-list-link {
+    transition: background-color 250ms linear;
+  }
+
+  .header-nav-list-link:hover,
+  .header-nav-list-link:focus {
+    background-color: #1b414b;
+  }
+
+  .header-social-list-link {
+    transition: fill 250ms linear;
+  }
+
+  .header-social-list-link:hover,
+  .header-social-list-link:focus {
+    fill: #062730;
   }
 }
-/* ===================================== /Desktop Styles 1280px ==========================*/
-/* =======================================================================================*/
-/* ===================================== Desktop Styles 1440px ===========================*/
+
+/* ---------------DeskTop 1440px----------------- */
+
 @media screen and (min-width: 1440px) {
-  .page-footer {
-    max-width: 1440px;
-  }
-  .footer-company-slogan-text {
-    max-width: 699px;
-    margin-right: auto;
-    margin-left: auto;
+  .header-nav {
+    width: 730px;
   }
 }
