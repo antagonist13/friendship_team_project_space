@@ -38,7 +38,7 @@ body {
   display: none;
 }
 
-button {
+.header-burger-btn {
   line-height: 0;
   display: flex;
   justify-content: center;
@@ -228,7 +228,7 @@ button {
     fill: #1b414b;
   }
 
-  button {
+  .header-burger-btn {
     display: none;
   }
 }
@@ -237,7 +237,7 @@ button {
 
 @media screen and (min-width: 1280px) {
   .header {
-    padding-bottom: 78px;
+    padding-bottom: 77.5px;
   }
 
   .header-container {
