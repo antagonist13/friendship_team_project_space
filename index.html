@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/friendship_team_project_space/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/friendship_team_project_space/assets/index-47a0573a.css">
+    <link rel="stylesheet" href="/friendship_team_project_space/assets/index-2eff17f3.css">
   </head>
 
   <body>
@@ -301,19 +301,19 @@
 
         <div class="yachts-list-box">
           <ul class="yachts-list-description">
-            <li>LENGTH</li>
-            <li>BUILDER</li>
-            <li>BUILT</li>
-            <li>GUESTS</li>
-            <li>PRICE</li>
+            <li><span>LENGTH</span></li>
+            <li><span>BUILDER</span></li>
+            <li><span>BUILT</span></li>
+            <li><span>GUESTS</span></li>
+            <li><span>PRICE</span></li>
           </ul>
 
           <ul class="yachts-list-inform">
-            <li>48m(155ft)</li>
-            <li>Admiral</li>
-            <li>2021</li>
-            <li>11 in 5 cabins</li>
-            <li>€33,500,000</li>
+            <li><span>48m(155ft)</span></li>
+            <li><span>Admiral</span></li>
+            <li><span>2021</span></li>
+            <li><span>11 in 5 cabins</span></li>
+            <li><span>€33,500,000</span></li>
           </ul>
         </div>
       </li>
@@ -350,19 +350,19 @@
         </div>
         <div class="yachts-list-box">
           <ul class="yachts-list-description">
-            <li>LENGTH</li>
-            <li>BUILDER</li>
-            <li>BUILT</li>
-            <li>GUESTS</li>
-            <li>PRICE</li>
+            <li><span>LENGTH</span></li>
+            <li><span>BUILDER</span></li>
+            <li><span>BUILT</span></li>
+            <li><span>GUESTS</span></li>
+            <li><span>PRICE</span></li>
           </ul>
 
           <ul class="yachts-list-inform">
-            <li>41m (133ft)</li>
-            <li>Benetti</li>
-            <li>2025</li>
-            <li>10 in 5 cabins</li>
-            <li>€23,210,000</li>
+            <li><span>41m (133ft)</span></li>
+            <li><span>Benetti</span></li>
+            <li><span>2025</span></li>
+            <li><span>10 in 5 cabins</span></li>
+            <li><span>€23,210,000</span></li>
           </ul>
         </div>
       </li>
@@ -392,19 +392,19 @@
 
         <div class="yachts-list-box">
           <ul class="yachts-list-description">
-            <li>LENGTH</li>
-            <li>BUILDER</li>
-            <li>BUILT</li>
-            <li>GUESTS</li>
-            <li>PRICE</li>
+            <li><span>LENGTH</span></li>
+            <li><span>BUILDER</span></li>
+            <li><span>BUILT</span></li>
+            <li><span>GUESTS</span></li>
+            <li><span>PRICE</span></li>
           </ul>
 
           <ul class="yachts-list-inform">
-            <li>50m(155ft)</li>
-            <li>ISA</li>
-            <li>2012</li>
-            <li>12 in 6 cabins</li>
-            <li>€21,000,000</li>
+            <li><span>50m(155ft)</span></li>
+            <li><span>ISA</span></li>
+            <li><span>2012</span></li>
+            <li><span>12 in 6 cabins</span></li>
+            <li><span>€21,000,000</span></li>
           </ul>
         </div>
       </li>
@@ -418,21 +418,17 @@
   <div class="advantages">
     <ol class="advantages-list">
       <li class="advantages-list-item">
-        <p class="advantages-list-title advantages-list-title-line">01</p>
         <span class="advantages-list-text advantages-list-text-design">
           Swimming and water sports: try your hand at water skiing
         </span>
       </li>
-
       <li class="advantages-list-item">
-        <p class="advantages-list-title advantages-list-title-line">02</p>
         <span class="advantages-list-text"
           >Fishing: try to catch your own dinner</span
         >
       </li>
 
       <li class="advantages-list-item">
-        <p class="advantages-list-title advantages-list-title-line">03</p>
         <span class="advantages-list-text">
           Sightseeing tours: take a shore or island tour, enjoy the views and
           sunsets from the water
@@ -440,7 +436,6 @@
       </li>
 
       <li class="advantages-list-item">
-        <p class="advantages-list-title advantages-list-title-line">04</p>
         <span class="advantages-list-text">
           Rest and relaxation: read a book or listen to music while enjoying the
           outdoor atmosphere.
@@ -501,6 +496,20 @@
           </div>
         </div>
         <div class="review-form-div">
+          <label class="review-form-label" for="user-email"></label>
+          <div class="div-input">
+            <input
+              class="review-form-input"
+              id="user-email"
+              name="user-email"
+              type="email"
+              title=""
+              placeholder="Email"
+              required
+            />
+          </div>
+        </div>
+        <div class="review-form-div">
           <label class="review-form-label" for="user-phone"></label>
           <div class="div-input">
             <input
@@ -510,26 +519,11 @@
               type="tel"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
               title="xxx-xxx-xx-xx"
-              placeholder="Email"
-              required
-            />
-          </div>
-        </div>
-        <div class="review-form-div">
-          <label class="review-form-label" for="user-email"></label>
-          <div class="div-input">
-            <input
-              class="review-form-input"
-              id="user-email"
-              name="user-email"
-              type="email"
-              title=""
               placeholder="Phone number"
               required
             />
           </div>
         </div>
-
         <div class="div-textarea">
           <label class="review-form-label" for="user-comment"></label>
           <textarea
@@ -540,8 +534,8 @@
             required
           ></textarea>
         </div>
+        <button class="button-modal" type="submit">Send</button>
       </form>
-      <button class="button-modal" type="submit">Send</button>
     </div>
     <div class="yachts-img">
       <picture>
