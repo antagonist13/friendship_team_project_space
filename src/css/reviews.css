@@ -23,7 +23,7 @@
 .reviews-author-item {
   display: flex;
   max-width: 335px;
-  height: 282px;
+
   padding: 32px 8px;
   flex-direction: column;
   align-items: center;
@@ -139,7 +139,7 @@
     width: calc((100% - 52px) / 3);
     display: flex;
     max-width: 376px;
-    height: 282px;
+
     padding: 32px 28px;
   }
 
@@ -164,7 +164,6 @@
     width: calc((100% - 64px) / 3);
     display: flex;
     max-width: 392px;
-    height: 282px;
     padding: 32px 36px;
   }
 

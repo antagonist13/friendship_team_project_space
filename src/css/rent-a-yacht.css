@@ -64,7 +64,7 @@
 .button-modal {
   display: block;
   padding: 14px 44px;
-  margin-top: 40px;
+  margin-top: 22px;
   border-radius: 15px;
   background: #1b414b;
   font-size: 14px;
@@ -123,7 +123,7 @@
   }
   .button-modal {
     padding: 18px 75px;
-    margin-top: 50px;
+    margin-top: 32px;
     border-radius: 15px;
     background: #1b414b;
     font-size: 18px;
