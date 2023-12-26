@@ -34,6 +34,7 @@
   display: flex;
   gap: 4px;
 }
+
 .footer-nav-list-link {
   display: block;
   color: #fbfbfb;
@@ -42,11 +43,12 @@
   font-weight: 400;
   line-height: 1.3;
   text-transform: uppercase;
+  box-sizing: content-box;
+  min-width: 42px;
   padding: 15px 12px;
   border-radius: 8px;
   background: rgba(251, 251, 251, 0.3);
   outline: 0px solid transparent;
-  width: 66px;
 }
 .footer-nav-list-link:hover,
 .footer-nav-list-link:focus {
@@ -109,6 +111,14 @@
 .footer-copyrite-privacy-link:focus {
   outline: 1px solid rgba(251, 251, 251, 0.4);
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .footer-nav-list-link {
+    min-width: 0;
+  }
+  .footer-nav-list {
+    gap: 2px;
+  }
+}
 /* ====================================== /Mobile Styles =================================*/
 /* =======================================================================================*/
 /* ====================================== Tablet Styles ==================================*/
@@ -132,6 +142,8 @@
   .footer-nav-list-link {
     padding-left: 24px;
     padding-right: 25px;
+    max-width: 91px;
+    box-sizing: border-box;
   }
   .footer-social-list {
     margin: 0;
@@ -153,36 +165,37 @@
     font-size: 14px;
   }
   .footer-nav-list-link {
-  width: 91px;
+    width: 91px;
+  }
+  /* ====================================== /Tablet Styles =================================*/
+  /* =======================================================================================*/
+  /* ===================================== Desktop Styles 1280px ===========================*/
+  @media screen and (min-width: 1280px) {
+    .page-footer {
+      max-width: 1280px;
+    }
+    .footer-conteiner {
+      padding-top: 50px;
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+    .footer-company-slogan-text {
+      max-width: 693px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  /* ===================================== /Desktop Styles 1280px ==========================*/
+  /* =======================================================================================*/
+  /* ===================================== Desktop Styles 1440px ===========================*/
+  @media screen and (min-width: 1440px) {
+    .page-footer {
+      max-width: 1440px;
+    }
+    .footer-company-slogan-text {
+      max-width: 699px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }
-/* ====================================== /Tablet Styles =================================*/
-/* =======================================================================================*/
-/* ===================================== Desktop Styles 1280px ===========================*/
-@media screen and (min-width: 1280px) {
-  .page-footer {
-    max-width: 1280px;
-  }
-  .footer-conteiner {
-    padding-top: 50px;
-    padding-left: 75px;
-    padding-right: 75px;
-  }
-  .footer-company-slogan-text {
-    max-width: 693px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-/* ===================================== /Desktop Styles 1280px ==========================*/
-/* =======================================================================================*/
-/* ===================================== Desktop Styles 1440px ===========================*/
-@media screen and (min-width: 1440px) {
-  .page-footer {
-    max-width: 1440px;
-  }
-  .footer-company-slogan-text {
-    max-width: 699px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}}
